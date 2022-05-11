@@ -1,0 +1,16 @@
+.logo__studio {
+    font-family: var(--secondary-font-family);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+.logo__web {
+    color: var(--accent-color);
+}
+.logo__theme_dark {
+    color: var(--primary-text-color);
+}
+.logo__theme_light {
+    color: var(--white-text-color);
+}
