@@ -1,8 +1,7 @@
 .logo__studio {
     font-family: var(--secondary-font-family);
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+  @include font(700, 24px, 28px);
+
     letter-spacing: 0.03em;
 }
 .logo__web {
@@ -13,4 +12,13 @@
 }
 .logo__theme_light {
     color: var(--white-text-color);
+}
+
+
+
+@media screen and (min-width: 1600px) 
+{
+    .logo__studio{
+        @include font(700, 26px, 31px);
+    }
 }
