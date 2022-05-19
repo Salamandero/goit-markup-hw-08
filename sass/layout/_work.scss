@@ -17,7 +17,12 @@
 .work__item:not(:nth-child(3n)) {
     margin-right: 30px;
 }
-
+.work{
+    @media screen and (max-width: 1599px) {
+        display: none;
+        
+    }
+}
 .work__wrapper {
     position: relative;
     img {
