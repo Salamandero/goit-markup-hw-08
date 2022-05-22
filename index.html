@@ -46,7 +46,7 @@
         <li class="header-contacts__item item">
           <a class="header-contacts__mail link"
             href="mailto:info@devstudio.com">
-            <svg class="header-contacts__icon" width="16" height="12">
+            <svg class="header-contacts__icon envelope">
               <use href="./images/sprite.svg#icon-envelope"></use>
             </svg>
             info@devstudio.com
@@ -54,7 +54,7 @@
         </li>
         <li class="header-contacts__item item">
           <a class="header-contacts__tel link" href="tel:+380961111111">
-            <svg class="header-contacts__icon" width="10" height="16">
+            <svg class="header-contacts__icon smartphone">
               <use href="./images/sprite.svg#icon-smartphone"></use>
             </svg>+38 096 111 11 11
           </a>
@@ -68,6 +68,7 @@
       </button>
 
     </div>
+
     <div class="mobile-menu" data-menu>
       <div class="container mobile-menu__container">
         <button class="mobile-menu__close-btn" type="button" data-menu-close>
@@ -75,11 +76,25 @@
             <use href="./images/sprite.svg#icon-close_40px"></use>
           </svg>
         </button>
-        <ul>
-          <li><a href="">link-1</a></li>
-          <li><a href="">link-2</a></li>
-          <li><a href="">link-3</a></li>
-          <li><a href="">link-4</a></li>
+        <ul class="mobile-menu__nav">
+          <li><a class="mobile-menu__studio active link" href="./index.html">Студия</a></li>
+          <li><a class="mobile-menu__portfolio link" href="./portfolio.html">Портфолио</a></li>
+          <li><a class="mobile-menu__contacts link" href="#">Контакты</a></li>
+        </ul>
+        <ul class="mobile-menu__tm">
+          <li>
+            <a class="mobile-menu__tel link" href="tel:+380961111111">
+            +38 096 111 11 11
+            </a></li>
+          <li><a class="mobile-menu__mail link" href="mailto:info@devstudio.com">
+            info@devstudio.com
+          </a></li>
+        </ul>
+        <ul class="mobile-menu__social">
+          <li class="mobile-menu__social-item"><a class="link" href="#">Instagram</a></li>
+          <li class="mobile-menu__social-item"><a class="link" href="#">Twitter</a></li>
+          <li class="mobile-menu__social-item"><a class="link" href="#">Facebook</a></li>
+          <li class="mobile-menu__social-item"><a class="link" href="#">LinkedIn</a></li>
         </ul>
       </div>
     </div>
@@ -145,14 +160,14 @@
           </li>
         </ul>
       </div>
-    </section> -->
-    <!-- <section class="work section">
+    </section>
+    <section class="work section">
       <div class="container">
         <h2 class="work__title">Чем мы занимаемся</h2>
         <ul class="list work__list">
           <li class="work__item item">
             <div class="work__wrapper">
-              <img src="./images/img-2.jpg" alt="Набор кода" width="370" />
+              <img src="./images/work/desk-work-1.jpg" alt="Набор кода" width="370" />
               <h3 class="work__wrapper-overlay">
                 Десктопные приложения
               </h3>
@@ -160,7 +175,7 @@
           </li>
           <li class="work__item item">
             <div class="work__wrapper">
-            <img src="./images/img-1.jpg" alt="Девушка держит телефон"
+            <img src="./images/work/desk-work-2.jpg" alt="Девушка держит телефон"
               width="370" />
               <h3 class="work__wrapper-overlay">
                 Мобильные приложения
@@ -169,7 +184,7 @@
           </li>
           <li class="work__item item">
             <div class="work__wrapper">
-              <img src="./images/img-3.jpg" alt="Палитра цветов" width="370" />
+              <img src="./images/work/desk-work-3.jpg" alt="Палитра цветов" width="370" />
               <h3 class="work__wrapper-overlay">
               Дизайнерские решения
               </h3>
@@ -183,7 +198,7 @@
         <h2 class="team__title">Наша команда</h2>
         <ul class="list team__list">
           <li class="team__item">
-            <img src="./images/our-command/img-1.jpg" alt="Мужчина в очках"
+            <img src="./images/our-command/desk-team-1.jpg" alt="Мужчина в очках"
               width="270" />
             <div class="team__object">
                   <h3 class="team__pretext">Игорь Демьяненко</h3>
@@ -215,7 +230,7 @@
             </div>
           </li>
           <li class="team__item">
-            <img src="./images/our-command/img-2.jpg" alt="Женщина в костюме"
+            <img src="./images/our-command/desk-team-2.jpg" alt="Женщина в костюме"
               width="270" />
             <div class="team__object">
                   <h3 class="team__pretext">Ольга Репина</h3>
@@ -247,7 +262,7 @@
             </div>
           </li>
           <li class="team__item">
-            <img src="./images/our-command/img-3.jpg" alt="Молодой парень"
+            <img src="./images/our-command/desk-team-3.jpg" alt="Молодой парень"
               width="270" />
             <div class="team__object">
                   <h3 class="team__pretext">Николай Тарасов</h3>
@@ -279,7 +294,7 @@
             </div>
           </li>
           <li class="team__item">         
-            <img src="./images/our-command/img-4.jpg" alt="Парень ИТшник"
+            <img src="./images/our-command/desk-team-4.jpg" alt="Парень ИТшник"
               width="270" />
             <div class="team__object">
                   <h3 class="team__pretext">Михаил Ермаков</h3>
@@ -508,6 +523,6 @@
   </div>
 
 <script src="./js/modal.js"></script> -->
-  <script src="./js/menu.js"></script>
+  <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
