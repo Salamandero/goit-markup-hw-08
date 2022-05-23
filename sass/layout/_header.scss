@@ -45,7 +45,11 @@
         position: fixed;
         top: 0;
         left: 0;
-        width: 100%;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: space-between;
+   
+        width: 100vw;
         height: 100vh;
         overflow: auto;
         background: var(--white-text-color);
@@ -68,9 +72,10 @@
 
     .mobile-menu__container {
         position: relative;
-        padding-top: 48px;
-        padding-bottom: 48px;
-        padding-left: 40px;
+        padding: 48px 40px;
+    }
+    .contact-group{
+        display: block;
     }
 
     .mobile-menu__close-btn {
@@ -205,8 +210,6 @@
     .header-contacts {
         display: block;
         text-decoration: none;
-        padding-top: 21px;
-        padding-bottom: 21px;
     }
     .header-contacts__mail,
     .header-contacts__tel {
@@ -224,9 +227,6 @@
         &:focus {
             color: var(--accent-color);
         }
-    }
-    .header-contacts__item:not(:last-child) {
-        margin-bottom: 10px;
     }
 
     .header-contacts__icon {
@@ -251,12 +251,21 @@
         height: 14px;
     }
 }
-
+@media screen and (min-width: 768px) and (max-width: 1199px){
+    .header-contacts__item:not(:last-child) {
+        margin-bottom: 10px;
+    }
+    .header-contacts {
+        padding-top: 21px;
+        padding-bottom: 21px;
+    }
+}
 //  ----------    DESKTOP
 @media screen and (min-width: 1200px) {
     .header-logo {
         margin-right: 93px;
     }
+
    
     .header-contacts {
         
@@ -265,7 +274,6 @@
 
         &>.item:not(:last-child) {
             margin-right: 30px;
-            margin-bottom: 0;
         }
     }
         .header-contacts__mail,
