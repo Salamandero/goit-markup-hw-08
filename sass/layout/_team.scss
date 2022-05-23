@@ -1,65 +1,65 @@
-// .team {
-//     background: #f5f4fa;
-// }
+.team {
+    background: #f5f4fa;
+}
 
-// .team__title {
-//     margin-bottom: 50px;
+.team__title {
+    margin-bottom: 50px;
 
-//     font-weight: 700;
-//     font-size: 36px;
-//     line-height: 1.1666;
-//     text-align: center;
-//     letter-spacing: 0.03em;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1666;
+    text-align: center;
+    letter-spacing: 0.03em;
 
-//     color: var(--primary-text-color);
-// }
+    color: var(--primary-text-color);
+}
 
-// .team__list {
-//     display: flex;
-//     flex-wrap: wrap;
-// }
+.team__list {
+    display: flex;
+    flex-wrap: wrap;
+}
 
-// .team__item {
-//     max-width: 270px;
-//     background: var(--white-text-color);
-//     /* material shadow v1 */
+.team__item {
+    max-width: 270px;
+    background: var(--white-text-color);
+    /* material shadow v1 */
 
-//     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-//         0px 1px 1px rgba(0, 0, 0, 0.14),
-//         0px 2px 1px rgba(0, 0, 0, 0.2);
-//     border-radius: 0px 0px 4px 4px;
-//     &:not(:nth-child(4n)) {
-//         margin-right: 30px;
-//     }
-// }
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    &:not(:nth-child(4n)) {
+        margin-right: 30px;
+    }
+}
 
 
 
-// .team__object {
-//     padding-top: 30px;
-//     padding-bottom: 30px;
-//     text-align: center;
-// }
+.team__object {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
 
-// .team__pretext {
-//     margin-bottom: 10px;
+.team__pretext {
+    margin-bottom: 10px;
 
-//     font-weight: 500;
-//     font-size: 16px;
-//     line-height: 1.1875;
-//     letter-spacing: 0.03em;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.1875;
+    letter-spacing: 0.03em;
 
-//     color: var(--primary-text-color);
-// }
+    color: var(--primary-text-color);
+}
 
-// .team__text {
-//     margin-bottom: 16px;
-//     font-size: 16px;
-//     line-height: 1.1875;
+.team__text {
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.1875;
 
-//     letter-spacing: 0.03em;
-//     color: var(--text-color);
-// }
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+}
 
 
 

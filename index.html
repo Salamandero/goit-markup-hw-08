@@ -108,7 +108,7 @@
         <button type="button" class="hero__btn modal-btn" data-modal-open>Заказать услугу</button>
       </div>
     </section>
-    <!-- <section class="peculiarities section no-padding">
+    <section class="peculiarities section">
       <div class="container">
         <h2 class="visually-hidden">Особенности</h2>
         <ul class="list peculiarities__list">
@@ -163,39 +163,68 @@
         </ul>
       </div>
     </section>
-    <section class="work section">
-      <div class="container">
-        <h2 class="work__title">Чем мы занимаемся</h2>
-        <ul class="list work__list">
-          <li class="work__item item">
-            <div class="work__wrapper">
-              <img src="./images/work/desk-work-1.jpg" alt="Набор кода" width="370" />
-              <h3 class="work__wrapper-overlay">
-                Десктопные приложения
-              </h3>
-            </div>
-          </li>
-          <li class="work__item item">
-            <div class="work__wrapper">
-            <img src="./images/work/desk-work-2.jpg" alt="Девушка держит телефон"
-              width="370" />
-              <h3 class="work__wrapper-overlay">
-                Мобильные приложения
-              </h3>
-            </div>
-          </li>
-          <li class="work__item item">
-            <div class="work__wrapper">
+    <section class="work section no-padding">
+    <div class="container">
+      <h2 class="work__title">Чем мы занимаемся</h2>
+      <ul class="list work__list">
+        <li class="work__item item">
+          <div class="work__wrapper">
+            <picture>
+              <source srcset="./images/work/desk-work-1.webp   1x,
+                  ./images/work/desk-work-1@2x.webp 2x" 
+                  media="(min-width: 1200px)" type="image/webp" />
+              <source srcset="./images/work/desk-work-1.jpg    1x,
+                  ./images/work/desk-work-1@2x.jpg 2x" 
+                  media="(min-width: 1200px)" />
+            
+            <img src="./images/work/desk-work-1.jpg" alt="Набор кода" width="370" />
+            </picture>
+            
+            <h3 class="work__wrapper-overlay">
+              Десктопные приложения
+            </h3>
+          </div>
+        </li>
+        <li class="work__item item">
+          <div class="work__wrapper">
+            <picture>
+              <source srcset="./images/work/desk-work-2.webp   1x,
+                              ./images/work/desk-work-2@2x.webp 2x" 
+                              media="(min-width: 1200px)" type="image/webp" />
+
+              <source srcset="./images/work/desk-work-2.jpg    1x,
+                              ./images/work/desk-work-2@2x.jpg 2x" 
+                              media="(min-width: 1200px)" />
+            
+              <img src="./images/work/desk-work-2.jpg" alt="Девушка держит телефон" width="370" />
+            </picture>
+            <h3 class="work__wrapper-overlay">
+              Мобильные приложения
+            </h3>
+          </div>
+        </li>
+        <li class="work__item item">
+          <div class="work__wrapper">
+            <picture>
+              <source srcset="./images/work/desk-work-3.webp   1x,
+                ./images/work/desk-work-3@2x.webp 2x" 
+                media="(min-width: 1200px)" type="image/webp" />
+
+              <source srcset="./images/work/desk-work-3.jpg    1x,
+                ./images/work/desk-work-3@2x.jpg 2x" 
+                media="(min-width: 1200px)" />
+            
               <img src="./images/work/desk-work-3.jpg" alt="Палитра цветов" width="370" />
-              <h3 class="work__wrapper-overlay">
-              Дизайнерские решения
-              </h3>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section> -->
-    <!-- <section class="team section">
+            </picture>
+            <h3 class="work__wrapper-overlay">
+            Дизайнерские решения
+            </h3>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+    <section class="team section">
       <div class="container">
         <h2 class="team__title">Наша команда</h2>
         <ul class="list team__list">
@@ -329,7 +358,7 @@
           </li>
         </ul>
       </div>
-    </section> -->
+    </section>
     <!-- <section class="customers section">
       <div class="container">
           <h2 class="customers__title">Постоянные клиенты</h2>
