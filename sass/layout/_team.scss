@@ -1,65 +1,91 @@
 .team {
-    background: #f5f4fa;
+  background: #f5f4fa;
 }
 
 .team__title {
-    margin-bottom: 50px;
-
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.1666;
-    text-align: center;
-    letter-spacing: 0.03em;
-
-    color: var(--primary-text-color);
-}
-
-.team__list {
-    display: flex;
-    flex-wrap: wrap;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  margin-bottom: 30px;
+  @include font(700, 28px, 33px);
 }
 
 .team__item {
-    max-width: 270px;
-    background: var(--white-text-color);
-    /* material shadow v1 */
+  background-color: var(--white-text-color);
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  max-width: 480px;
 
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-        0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-    &:not(:nth-child(4n)) {
-        margin-right: 30px;
-    }
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
-
-
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .team__object {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    text-align: center;
+  text-align: center;
+  margin-top: 30px;
 }
-
 .team__pretext {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
+  @include font(500, 16px, 19px);
+  letter-spacing: 0.03em;
 
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.1875;
-    letter-spacing: 0.03em;
-
-    color: var(--primary-text-color);
+  color: var(--primary-text-color);
 }
-
 .team__text {
-    margin-bottom: 16px;
-    font-size: 16px;
-    line-height: 1.1875;
-
-    letter-spacing: 0.03em;
-    color: var(--text-color);
+  @include font(400, 16px, 19px);
+  margin-bottom: 16px;
+  color: var(--text-color);
+  letter-spacing: 0.03em;
+}
+.social-list {
+  display: flex;
+  padding-bottom: 24px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.social-list-item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
+@media screen and (min-width: 768px) {
+  .team__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
 
+  .team__item {
+    max-width: 354px;
 
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__title {
+    margin-bottom: 50px;
+
+    @include font(700, 36px, 42px);
+  }
+
+  .team__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .team__item {
+    max-width: 270px;
+  }
+}

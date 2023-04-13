@@ -1,51 +1,70 @@
 .customers__title {
-    margin-bottom: 50px;
+  margin-bottom: 30px;
+  @include font(700, 28px, 33px);
 
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.1666;
-    text-align: center;
-    letter-spacing: 0.03em;
+  text-align: center;
+  letter-spacing: 0.03em;
 
-    color: var(--primary-text-color);
+  color: var(--primary-text-color);
 }
-
 .customers__list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  width: 100%;
 }
-
-.customers__item:not(:last-child) {
-    margin-right: 30px;
-}
-
 .customers__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 170px;
-    height: 92px;
-    border: 1px solid var(--icon-color);
-    border-radius: 4px;
-    background-color: var(--white-text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    transition: border 250ms var(--timing-function);
-    &:hover,
-    &:focus {
-        border: 1px solid var(--accent-color);
-    }
+  width: 100%;
+  height: 92px;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  background-color: var(--white-text-color);
+
+  transition: border 250ms var(--timing-function);
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+  }
 }
 
 .customers__icon {
-    fill: var(--icon-color);
-    transition: fill 250ms var(--timing-function);
+  fill: var(--icon-color);
+  transition: fill 250ms var(--timing-function);
 
-    .customers__link:hover &,
-    .customers__link:focus & {
-        fill: var(--accent-color);
-    }
+  .customers__link:hover &,
+  .customers__link:focus & {
+    fill: var(--accent-color);
+  }
 }
 
+//////////////  min-width: 768px
+@media screen and (min-width: 768px) {
+  .customers__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 226px;
+  }
+  .customers__link {
+    width: 226px;
+  }
+}
+//////////////  min-width: 1200px
+@media screen and (min-width: 1200px) {
+  .customers__title {
+    margin-bottom: 50px;
+    @include font(700, 36px, 33px);
+  }
 
-
+  .customers__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 170px;
+  }
+  .customers__link {
+    width: 170px;
+  }
+}
