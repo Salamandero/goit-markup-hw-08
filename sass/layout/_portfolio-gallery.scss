@@ -31,14 +31,16 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 30px;
-  width: 404px;
+  width: 450px;
   & > .item {
-    width: 404px;
+    width: 450px;
     background: var(--white-text-color);
     border: 1px solid #eeeeee;
   }
 }
-
+.projects-img-overlay img {
+  width: 450px;
+}
 .projects-link {
   display: block;
   transition: box-shadow 250ms var(--timing-function);
@@ -112,6 +114,9 @@
       width: 354px;
     }
   }
+  .projects-img-overlay img {
+    width: 354px;
+  }
   //   .projects-list {
   //     display: flex;
   //     flex-wrap: wrap;
@@ -141,5 +146,8 @@
     & > .item {
       width: 370px;
     }
+  }
+  .projects-img-overlay img {
+    width: 370px;
   }
 }
